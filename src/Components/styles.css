@@ -1,0 +1,33 @@
+/* 
+
+header{
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 80%;
+}
+nav ul{
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding : 5px 10px;
+}
+hr{
+    margin: 20px 0;
+}
+h2{
+    margin-right: 0;
+    text-align: center;
+    align-items: center;
+    color: #333;
+    font-size: 24px;
+} */
