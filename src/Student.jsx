@@ -104,19 +104,22 @@
 // }
 
 import React, { useState } from "react";
+import "./Student.css";
 
 export default function Student() {
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState(
+    "Click the button to get a message ✨"
+  );
 
-  function handling() {
-    const messages = [
-      "Welcome Darling ❤️",
-      "Good Night 🌙",
-      "Have a nice day 😊",
-      "Keep learning React 🚀",
-      "You are doing great 💪"
-    ];
+  const messages = [
+    "Welcome Saxiib test React waye igu qado hh ❤️",
+    "Good Night 🌙",
+    "Have a Nice Day 😊",
+    "Keep Learning React 🚀",
+    "You Are Doing Great 💪",
+  ];
 
+  function handleMessage() {
     const randomIndex = Math.floor(
       Math.random() * messages.length
     );
@@ -125,12 +128,19 @@ export default function Student() {
   }
 
   return (
-    <div>
-      <h1>{message}</h1>
+    <div className="container">
+      <div className="card">
+        <h1 className="title">Random Message Generator</h1>
 
-      <button onClick={handling}>
-        Show Random Message
-      </button>
+        <p className="message">{message}</p>
+
+        <button
+          className="btn"
+          onClick={handleMessage}
+        >
+          Show Random Message
+        </button>
+      </div>
     </div>
   );
-}  
+}
