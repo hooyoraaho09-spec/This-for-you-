@@ -102,9 +102,9 @@
 //     </div>
 //   );
 // }
+import "./Student.css";
 
 import React, { useState } from "react";
-import "./Student.css";
 
 export default function Student() {
   const [message, setMessage] = useState(
